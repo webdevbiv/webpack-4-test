@@ -85,5 +85,36 @@ const result = photoArray.map((photoObject) => {
 
 list.append(...result)
 
+console.clear()
 
+const user = {
+    name: 'user',
+    age: 18,
+    skills: 'js',
+}
+console.log(user);
+console.log(JSON);
+const jsonUser = JSON.stringify(user)
+console.log(jsonUser);
+
+const newUser = JSON.parse(jsonUser)
+console.log(newUser);
+
+console.log(localStorage);
+console.log(typeof localStorage);
+
+localStorage.setItem('name', 'user')
+localStorage.setItem('user', JSON.stringify(user))
+
+const value = localStorage.getItem('name')
+console.log(value);
+
+const getObject = localStorage.getItem('user')
+console.log(getObject);
+
+const jsObject = JSON.parse(getObject)
+console.log(jsObject);
+
+localStorage.removeItem('name')
+localStorage.clear()
 

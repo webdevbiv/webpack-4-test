@@ -3,3 +3,8 @@ body {
   color: wheat;
   text-align: center;
 }
+
+.dark {
+  background: rgb(8, 28, 66);
+  color: rgb(250, 246, 33);
+}
